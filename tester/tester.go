@@ -166,11 +166,18 @@ func (t *Tester) ProcessExcludes(excludes map[string]map[int]bool) error {
 					break
 				}
 			}
-			if !excluded || b.Count > 0 {
-				// include blocks that are not excluded
-				// also include any blocks that have coverage
-				blocks = append(blocks, b)
+			//if !excluded || b.Count > 0 {
+			//	// include blocks that are not excluded
+			//	// also include any blocks that have coverage
+			//	blocks = append(blocks, b)
+			//}
+
+			// excluded blocks are considered to have coverage of count 1
+			if excluded {
+				b.Count = 1
 			}
+			// include all blocks
+			blocks = append(blocks, b)
 		}
 		profile := &cover.Profile{
 			FileName: p.FileName,
