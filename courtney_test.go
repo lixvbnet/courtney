@@ -12,7 +12,7 @@ import (
 
 	"os"
 
-	"github.com/dave/courtney/shared"
+	"github.com/lixvbnet/courtney/shared"
 	"github.com/dave/patsy"
 	"github.com/dave/patsy/builder"
 	"github.com/dave/patsy/vos"

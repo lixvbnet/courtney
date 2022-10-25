@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/dave/courtney/shared"
-	"github.com/dave/courtney/tester"
+	"github.com/lixvbnet/courtney/shared"
+	"github.com/lixvbnet/courtney/tester"
 	"github.com/dave/patsy"
 	"github.com/dave/patsy/builder"
 	"github.com/dave/patsy/vos"

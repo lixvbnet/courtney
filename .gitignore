@@ -28,3 +28,7 @@ _testmain.go
 .DS_Store
 .idea/
 coverage.out
+
+c.out
+C.xml
+C.html
